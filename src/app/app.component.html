@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Products</a>
+  <a class="navbar-brand" href="#">New Product</a>
+</nav>
+
+<div class="row">
+      <div *ngFor="let product of products; index as i">
+        <div class="card text-center m-3">
+          <div class="card-header">
+            <b>Product Information {{ i+1 }}</b>
+          </div>
+          <div class="card-body">
+            <p class="card-title"><b> Name Product: </b> {{ product.name }}</p>
+            <p class="card-text"><b> Price: </b> {{ product.price }}</p>
+            <p class="card-text"><b> Quantity: </b>{{ product.quantity }}</p>
+          </div>
+          <div class="card-footer text-muted">
+            <button class="btn btn-block btn-warning">Edit</button>
+            <button class="btn btn-block btn-danger">Delete</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+<router-outlet></router-outlet>
