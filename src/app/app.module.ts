@@ -9,6 +9,7 @@ import { ReadComponent } from './product/read/read.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ProductServiceService } from '../app/service/product-service.service'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductServiceService } from '../app/service/product-service.service'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ProductServiceService

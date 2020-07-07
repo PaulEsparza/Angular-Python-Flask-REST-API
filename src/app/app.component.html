@@ -1,6 +1,7 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Products</a>
-  <a class="navbar-brand" href="#">New Product</a>
+  <!-- Button or link trigger modal -->
+  <a class="navbar-brand" href="#" data-toggle="modal" data-target="#productModal">Add Product</a>
 </nav>
 
 <div class="row">
@@ -21,5 +22,7 @@
         </div>
       </div>
 </div>
+
+<app-create></app-create>
 
 <router-outlet></router-outlet>
